@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Chocola Golde – Chocolat de Luxe</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Chocola Golde – Chocolat premium au miel, noisettes et chocolat noir.">
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f6f3ef;
+    color:#3b2a1a;
+}
+
+/* HEADER */
+header{
+    background:linear-gradient(90deg,#3b2a1a,#d4af37);
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+header h1{margin:0;font-size:38px;}
+header p{font-style:italic;}
+
+/* MENU */
+nav{
+    background:#3b2a1a;
+    padding:12px;
+    text-align:center;
+}
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{color:#d4af37;}
+
+/* SECTION */
+section{
+    padding:50px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+h2{text-align:center;color:#d4af37;}
+
+/* TEXTE */
+.accueil-text{text-align:center;font-size:17px;margin-bottom:25px;}
+
+/* BANDE IMAGES */
+.bande{
+    background:#fff;
+    overflow:hidden;
+    white-space:nowrap;
+    padding:15px 0;
+}
+.bande-track{
+    display:inline-block;
+    animation:defile 20s linear infinite;
+}
+.bande img{
+    height:120px;
+    margin:0 20px;
+    border-radius:10px;
+}
+@keyframes defile{
+    0%{transform:translateX(0);}
+    100%{transform:translateX(-50%);}
+}
+
+/* PRODUITS */
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+.product{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 6px 12px rgba(0,0,0,0.1);
+    text-align:center;
+}
+.product img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:12px;
+}
+.price{
+    color:#d4af37;
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* SOCIAL */
+.social{text-align:center;}
+.social a{
+    display:inline-block;
+    margin:10px;
+    padding:12px 25px;
+    background:#3b2a1a;
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.social a:hover{background:#d4af37;}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 18px;
+    border-radius:50%;
+    font-size:22px;
+    text-decoration:none;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* FOOTER */
+footer{
+    background:#3b2a1a;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chocola Golde</h1>
+    <p>Le goût de luxe | مذاق الفخامة</p>
+</header>
+
+<nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#produits">Produits</a>
+    <a href="#reseaux">Réseaux</a>
+</nav>
+
+<section id="accueil">
+    <h2>Bienvenue | مرحباً</h2>
+    <p class="accueil-text">
+        Chocola Golde progrès chocolat premium b ingrédients naturels  
+        pour un goût luxueux et unique.
+    </p>
+
+    <!-- BANDE DEFILANTE AVEC IMAGES -->
+    <div class="bande">
+        <div class="bande-track">
+            <img src="file:///C:/Users/hp/Desktop/IMG_1922.webp">
+            <img src="file:///C:/Users/hp/Desktop/Green_and_Black's_dark_chocolate_bar_2.jpg">
+            <img src="file:///C:/Users/hp/Desktop/recette-chocolat-noisettes-fleur-de-sel.jpg">
+            <img src="file:///C:/Users/hp/Desktop/IMG_1922.webp">
+            <img src="file:///C:/Users/hp/Desktop/Green_and_Black's_dark_chocolate_bar_2.jpg">
+        </div>
+    </div>
+</section>
+
+<section id="produits">
+    <h2>Nos Produits</h2>
+
+    <div class="products">
+        <div class="product">
+            <img src="file:///C:/Users/hp/Desktop/IMG_1922.webp">
+            <h3>Chocolat au Miel</h3>
+            <div class="price">35 DH</div>
+        </div>
+
+        <div class="product">
+            <img src="file:///C:/Users/hp/Desktop/Green_and_Black's_dark_chocolate_bar_2.jpg">
+            <h3>Chocolat Noir Premium</h3>
+            <div class="price">40 DH</div>
+        </div>
+
+        <div class="product">
+            <img src="file:///C:/Users/hp/Desktop/recette-chocolat-noisettes-fleur-de-sel.jpg">
+            <h3>Chocolat aux Noisettes</h3>
+            <div class="price">45 DH</div>
+        </div>
+    </div>
+</section>
+
+<section id="reseaux">
+    <h2>Suivez-nous</h2>
+    <div class="social">
+        <a href="https://www.instagram.com/chocolagolde?igsh=dWtqOTRyeTl6N3Vi_blank">Instagram</a>
+        <a href="https://www.facebook.com/share/1ADy61bf6J/_blank">Facebook</a>
+        <a href="https://www.tiktok.com/@chocolagolde?_r=1&_t=ZS-92Jy4iLrWYT_blank">TikTok</a>
+    </div>
+</section>
+
+<a class="whatsapp" href="https://wa.me/212623171449" target="_blank">💬</a>
+
+<footer>
+    <p>© 2025 Chocola Golde – Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
